@@ -54,7 +54,7 @@ html {
   position: absolute;
   font-family: "DM Sans", sans-serif;
   top: 8.5rem;
-  right: 25%;
+  right: 30%;
 }
 
 .navbar-link {
@@ -62,6 +62,7 @@ html {
   color: #fefefe;
   display: inline-block;
   margin: 0 4rem;
+  text-shadow: 1px 1px 2px #091529;
   transition: transform 0.3s;
 }
 
@@ -70,16 +71,70 @@ html {
 }
 /* !------------END OF NAVBAR------------ */
 
+/* !PHONE AND FREE ESTIMATES */
+.phone-estimate {
+  position: absolute;
+  display: flex;
+  top: 7.9rem;
+  right: 15rem;
+}
+
+.phone-number {
+  margin-right: 20rem;
+  margin-top: 0.9rem;
+  padding-right: 4rem;
+  font-size: 1.3rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.phone-number-link {
+  position: absolute;
+  width: 100%;
+  right: 11rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.3s;
+}
+
+.phone-number-link:hover {
+  transform: translateY(-0.3rem);
+  color: #0aa3a3;
+}
+
+.estimates-button {
+  position: absolute;
+  color: white;
+  top: 0.3rem;
+  right: 0;
+  margin-top: -0.3rem;
+  font-family: "DM Sans", sans-serif;
+  border: solid 0.1px #fefefe;
+  background-color: transparent;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  transition: 0.5s;
+}
+
+.estimates-button:hover {
+  background-color: #0aa3a3;
+  cursor: pointer;
+  box-shadow: 3px 2px 2px #091529;
+  border: none;
+}
+/* !END OF PHONE AND FREE ESTIMATES */
+
 /* !--------------BANNER----------------- */
 .section-1-banner {
   position: absolute;
   flex-direction: column;
-  top: 40%;
-  left: -5%;
+  top: 37%;
+  left: -12%;
 }
 
 .main-heading {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   width: 40%;
@@ -92,8 +147,8 @@ html {
 
 .sub-heading {
   padding-top: 3rem;
-  margin-left: -5%;
-  width: 35%;
+  margin-left: -10%;
+  width: 30%;
   font-size: 1.7rem;
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 0.1rem;
@@ -104,15 +159,16 @@ html {
 
 .section-1-button {
   position: absolute;
-  padding: 1.3rem;
-  background-color: #098b8c;
-  color: white;
-  font-family: "DM Sans", sans-serif;
   margin-left: -33%;
-  margin-top: 32%;
+  margin-top: 31%;
+  padding: 1.3rem;
+  box-shadow: 3px 2px 2px #091529;
   font-size: 1.8rem;
   border: none;
   border-radius: 0.4rem;
+  background-color: #098b8c;
+  color: white;
+  font-family: "DM Sans", sans-serif;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -120,6 +176,14 @@ html {
 .section-1-button:hover {
   background-color: #0aa3a3;
   transform: translateY(-0.5rem);
+}
+
+.guy-savings {
+  position: absolute;
+  width: 35%;
+  height: auto;
+  top: -35%;
+  left: 78%;
 }
 /* !-----------END OF BANNER------------- */
 
