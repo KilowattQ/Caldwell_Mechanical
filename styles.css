@@ -9,6 +9,11 @@
   font-family: "DM Sand", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -34,7 +39,7 @@ html {
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* !------------LOGO------------- */
@@ -110,11 +115,12 @@ html {
   margin-top: -0.3rem;
   font-family: "DM Sans", sans-serif;
   border: solid 0.1px #fefefe;
+  border-radius: 0.6rem;
   background-color: transparent;
   padding: 1rem 1.5rem 1rem 1.5rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .estimates-button:hover {
@@ -123,7 +129,7 @@ html {
   box-shadow: 3px 2px 2px #091529;
   border: none;
 }
-/* !END OF PHONE AND FREE ESTIMATES */
+/* !--END OF PHONE AND FREE ESTIMATES-- */
 
 /* !--------------BANNER----------------- */
 .section-1-banner {
@@ -157,16 +163,31 @@ html {
   text-shadow: 1px 1px 2px black;
 }
 
+.financing-option {
+  position: absolute;
+  margin-top: 27%;
+  margin-left: -29%;
+}
+.financing {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  color: rgb(201, 199, 199);
+  transition: 0.3s;
+}
+
+.financing:hover {
+  color: #0aa3a3;
+}
+
 .section-1-button {
   position: absolute;
   margin-left: -33%;
-  margin-top: 31%;
-  padding: 1.3rem;
-  box-shadow: 3px 2px 2px #091529;
+  margin-top: 36%;
+  padding: 1rem;
   font-size: 1.8rem;
-  border: none;
-  border-radius: 0.4rem;
-  background-color: #098b8c;
+  border: 1px solid white;
+  border-radius: 0.6rem;
+  background-color: transparent;
   color: white;
   font-family: "DM Sans", sans-serif;
   cursor: pointer;
@@ -174,8 +195,10 @@ html {
 }
 
 .section-1-button:hover {
-  background-color: #0aa3a3;
+  background-color: #098b8c;
   transform: translateY(-0.5rem);
+  box-shadow: 3px 2px 2px #091529;
+  border: none;
 }
 
 .guy-savings {
@@ -222,3 +245,175 @@ html {
 
 /* !---------END OF SECTION 1------------ */
 /* !---------END OF SECTION 1------------*/
+
+/* ?--------------SECTION 2-------------- */
+/* ?--------------SECTION 2-------------- */
+
+.section-2 {
+  /* display: flex; */
+  background-color: #f6f6f7;
+}
+.section-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  padding-top: 3%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(47 48 52);
+}
+
+.sec-2-background-1 {
+  position: absolute;
+  width: 35%;
+  filter: blur(2px);
+  opacity: 0.04;
+  transform: rotate(22.5deg);
+  left: -10%;
+  z-index: 2;
+}
+
+.sec-2-background-2 {
+  position: absolute;
+  width: 30%;
+  filter: blur(2px);
+  opacity: 0.03;
+  transform: rotate(22.5deg);
+  left: 35%;
+  z-index: 2;
+}
+
+.sec-2-background-3 {
+  position: absolute;
+  width: 35%;
+  filter: blur(2px);
+  opacity: 0.03;
+  transform: rotate(22.5deg);
+  right: -15%;
+  z-index: 2;
+}
+
+.partner-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.partner {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-subheading {
+  font-size: 3.5rem;
+  color: rgb(47 48 52);
+  font-family: "DM Sans", sans-serif;
+  margin-top: 10%;
+  z-index: 5;
+}
+
+hr.solid-0 {
+  border-top: 1px solid rgb(121, 120, 120);
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+hr.solid-1 {
+  border-top: 1px solid rgb(121, 120, 120);
+  width: 10%;
+  margin-top: 5%;
+  margin-left: 57.5%;
+}
+
+hr.solid-2 {
+  border-top: 1px solid rgb(121, 120, 120);
+  width: 10%;
+  margin-top: 5%;
+  margin-left: 31%;
+}
+
+.section-2-paragraph {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: rgb(47 48 52);
+  width: 50%;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 29%;
+  z-index: 5;
+}
+
+.h2-rheem {
+  margin-left: 25%;
+}
+
+.h2-mitsubishi {
+  margin-right: 28%;
+}
+
+.p-rheem {
+  margin-left: 37%;
+  z-index: 100;
+}
+
+.p-mitsubishi {
+  margin-left: 10%;
+}
+
+.rheem-button {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: transparent;
+  font-weight: 300;
+  margin-left: 24.3%;
+  padding: 0.4rem 2.5rem;
+  transition: 0.3s;
+}
+
+.rheem-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.mitsubishi-button {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: transparent;
+  font-weight: 300;
+  margin-left: -28%;
+  padding: 0.4rem 2.5rem;
+  transition: 0.3s;
+}
+
+.mitsubishi-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.rheem-logo {
+  width: 15%;
+  margin-left: 54.5%;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  /* border-radius: 50%; */
+}
+
+.mitsubishi-logo {
+  width: 18%;
+  margin-top: 5%;
+  margin-left: 27%;
+  padding-bottom: 10%;
+  border-radius: 50%;
+}
+
+/* ?---------END OF SECTION 2----------- */
+/* ?---------END OF SECTION 2----------- */
